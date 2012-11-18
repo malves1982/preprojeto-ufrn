@@ -220,7 +220,7 @@ FUNCTION {format.names}
 	      if$
 	      t "others" =
 		{ " et~al." * }
-		{ " and " * t * }
+		{ " e " * t * }
 	      if$
 	    }
 	  if$
@@ -347,8 +347,8 @@ FUNCTION {format.edition}
 { edition empty$
     { "" }
     { output.state mid.sentence =
-	{ edition "l" change.case$ " edition" * }
-	{ edition "t" change.case$ " edition" * }
+	{ edition "l" change.case$ " edição" * }
+	{ edition "t" change.case$ " edição" * }
       if$
     }
   if$
@@ -380,8 +380,8 @@ FUNCTION {format.pages}
 { pages empty$
     { "" }
     { pages multi.page.check
-	{ "pages" pages n.dashify tie.or.space.connect }
-	{ "page" pages tie.or.space.connect }
+	{ "pp" pages n.dashify tie.or.space.connect }
+	{ "pp" pages tie.or.space.connect }
       if$
     }
   if$
@@ -412,7 +412,7 @@ FUNCTION {format.chapter.pages}
 { chapter empty$
     'format.pages
     { type empty$
-	{ "chapter" }
+	{ "Capítulo" }
 	{ type "l" change.case$ }
       if$
       chapter tie.or.space.connect
@@ -663,7 +663,7 @@ FUNCTION {mastersthesis}
   new.block
   format.title "title" output.check
   new.block
-  "Master's thesis" format.thesis.type output.nonnull
+  "Dissertação de Mestrado" format.thesis.type output.nonnull
   school "school" output.check
   address output
   new.block
@@ -846,7 +846,7 @@ FUNCTION {format.lab.names}
 	'skip$
 	{ s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
 	    { " et~al." * }
-	    { " and " * s #2 "{vv~}{ll}" format.name$ * }
+	    { " e " * s #2 "{vv~}{ll}" format.name$ * }
 	  if$
 	}
       if$

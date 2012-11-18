@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+%\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{Otimizando o funcionamento de uma maquina virtual\\ Pre Projeto}
+
+\author{Márcio A. de Macêdo\inst{1} }
+
+
+\address{Departamento de Informática e Estatística -- Universidade Federal do Piauí
+  (UFPI)\\
+  Teresina -- PI -- Brazil
+  \email{\{marcioalves1982\}@hotmail.com}
+}
+
+\begin{document} 
+
+\maketitle
+
+\section{Motivação}
+
+Serviços web são programas modulares descritos por uma coleção de operações que são 
+acessíveis pela rede através de protocolos padronizados da internet, onde suas 
+características são definidas usando um padrão baseado na linguagem XML \cite{rodriguez2012optimal}. 
+A implementação dos serviços web é baseada em padrões industriais como SOAP e WSDL \cite{curbera2002unraveling}. 
+Por conta de sua natureza modular, os serviços web podem ser combinados para criar novos 
+serviços mais complexos. O processo de arranjar os serviços web em complexas filas de 
+trabalho é chamado de composição de serviços web \cite{bartalos2011automatic}. No entanto a WSDL não é capaz 
+de descrever composição de serviços.
+
+A necessidade de definição de melhores interfaces para a composição de serviços web 
+motivou a definição de novas linguagens e descrições técnicas para estas interfaces. 
+Neste contexto PEWS (Path Expressions for Web Services) foi criada como uma linguagem de 
+especificação de interfaces que permite ao usuário especificar comportamentos das 
+interfaces tanto de serviços simples quanto de serviços compostos \cite{ba2006composing}.
+
+Há dois padrões dominantes para a criação de composição de serviços web. Um deles é a 
+orquestração de serviços web que usa a figura de um orquestrador para coordenar as operações 
+dos serviços web de acordo com um controle de fluxo que ele mesmo gerencia, O outro é chamado 
+de coreografia de serviços web que define os comportamentos de iteração externas e serve como 
+um contrato ou protocolo entre os serviços web, fazendo com que os serviços web trabalhem 
+de forma colaborativa \cite{wang2012actor}.
+
+No contexto da orquestração foi criada a PEWS-AM que é uma maquina de redução de 
+grafos (maquina virtual) para a execução de orquestrações de serviços web. A maquina 
+foi proposta e um protótipo da mesma está sendo desenvolvido no âmbito da 
+equipe ForALL do PPgSC [6].
+
+\section{Objetivo}
+
+Este trabalho objetiva estudar o desempenho da arquitetura da máquina virtual 
+PEWS-AM em situações reais, propor e implementar otimizações que possam melhorar esse desempenho.
+
+\section{Metodologia}
+
+O desenvolvimento e a execução deste trabalho envolverá o estudo sobre o funcionamento da 
+maquina de redução de grafos PEWS-AM, o que inclui o conhecimento de sua semântica formal e 
+das regras de tradução de programas para representação na forma de grafos; o estudo do seu 
+funcionamento em situações reais e por fim serão propostas e implementadas as melhorias da 
+arquitetura.
+
+\bibliographystyle{sbc}
+\bibliography{preprojeto-ufrn}
+
+\end{document}
