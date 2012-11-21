@@ -48,4 +48,10 @@
   organization={IEEE}
 }
 
-
+@inproceedings{ufrn2013,
+  title={Otimizando o funcionamento de uma maquina virtual},
+  author={Musicante, M.A.},
+  booktitle={Tema de mestrado UFRN},
+  year={2012},
+  organization={UFRN}
+}

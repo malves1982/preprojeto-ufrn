@@ -4,22 +4,17 @@
 
 \usepackage{graphicx,url}
 
-%\usepackage[brazil]{babel}   
+\usepackage[brazil]{babel}   
 \usepackage[latin1]{inputenc}  
 
      
 \sloppy
 
-\title{Otimizando o funcionamento de uma maquina virtual\\ Pre Projeto}
+\title{Otimizando o funcionamento de uma maquina virtual}
 
 \author{Márcio A. de Macêdo\inst{1} }
 
-
-\address{Departamento de Informática e Estatística -- Universidade Federal do Piauí
-  (UFPI)\\
-  Teresina -- PI -- Brazil
-  \email{\{marcioalves1982\}@hotmail.com}
-}
+\address{\{marcioalves1982\}@hotmail.com}
 
 \begin{document} 
 
@@ -44,22 +39,25 @@ interfaces tanto de serviços simples quanto de serviços compostos \cite{ba2006co
 
 Há dois padrões dominantes para a criação de composição de serviços web. Um deles é a 
 orquestração de serviços web que usa a figura de um orquestrador para coordenar as operações 
-dos serviços web de acordo com um controle de fluxo que ele mesmo gerencia, O outro é chamado 
-de coreografia de serviços web que define os comportamentos de iteração externas e serve como 
+dos serviços web de acordo com um controle de fluxo que ele mesmo gerencia, o outro é chamado 
+de coreografia de serviços web que define os comportamentos de iterações externas e serve como 
 um contrato ou protocolo entre os serviços web, fazendo com que os serviços web trabalhem 
 de forma colaborativa \cite{wang2012actor}.
+
+--Desde que possamos representar um programa como um grafo, podemos fazer uso da tecnica de 
+redução de grafos para melhorar o tempo de execução de programas, alem da possibilidade de 
+se executar partes do grafo em paralelo[] o que traria beneficios com relação a programas 
+baseados em webservices.---
 
 No contexto da orquestração foi criada a PEWS-AM que é uma maquina de redução de 
 grafos (maquina virtual) para a execução de orquestrações de serviços web. A maquina 
 foi proposta e um protótipo da mesma está sendo desenvolvido no âmbito da 
-equipe ForALL do PPgSC \cite{ufrn2013}.
+equipe ForALL do PPgSC.
 
-\section{Objetivo}
+\section{Objetivo e Metodologia}
 
 Este trabalho objetiva estudar o desempenho da arquitetura da máquina virtual 
 PEWS-AM em situações reais, propor e implementar otimizações que possam melhorar esse desempenho.
-
-\section{Metodologia}
 
 O desenvolvimento e a execução deste trabalho envolverá o estudo sobre o funcionamento da 
 maquina de redução de grafos PEWS-AM, o que inclui o conhecimento de sua semântica formal e 
